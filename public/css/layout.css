@@ -1,0 +1,78 @@
+/* CSS Document */
+
+#loginBtn{
+background: #2370b8;
+color: white;
+padding:5px;
+border: none;
+border-color: none;
+cursor:pointer;
+font-weight:bold;
+}
+#loginBtn:hover{
+background: #e47925;
+}
+.navbar.navbar-light{
+padding: 10px 150px;
+}
+.navbar-brand{
+    font: 3rem Helvetica !important;
+    font-weight: bold !important;
+    padding: 0 0 !important;
+    margin: 0 0 !important;
+}
+.col-md-8{
+    padding: 0 0 !important;
+}
+.col-md-4{
+    padding: 0 0 !important;
+}
+.row.w-100{
+    margin: 0 0;
+
+}
+.card.mb-3.h-100{
+    margin: 0 0 !important;
+}
+.signupbox{
+    padding-top: 100px;
+    padding-right: 100px;
+}
+.btn.btn-primary:hover{
+    background: #e47925;
+    }
+.container{
+    margin: 0 0;
+}
+.btn-outline-success {
+    color: #2370b8 !important;
+    border-color: #2370b8 !important;
+}
+.btn-outline-success:hover {
+    background: #e47925 !important;
+}
+.signupbox {
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.contactpic{
+    width: 50%;
+    height: 60%;
+    margin: auto;    
+    display: block;
+}
+.indexpic{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    vertical-align: baseline;
+
+  }
+  
+  
+
+  @media screen and (max-width: 600px) {
+    div.row{
+          flex-direction: column;
+     }
+  }

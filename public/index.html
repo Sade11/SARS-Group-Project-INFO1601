@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>SARS - Log In or Sign Up</title>
+   
+</head>
+
+<body>
+    <div class="d-flex flex-column min-vh-100">
+        <!--The Page Wrapper-->
+        <header>
+            <nav class="navbar navbar-light" style="background-color: #f7f5f5;">
+                <!--The Header of the Page-->
+                <div class="container">
+                    <a class="navbar-brand" style="color: #5198d1;" href="home.html">
+                        <!--When you click the logo it Will return you to the home page -->
+                        <img src="images/logo 2.png" width="80" height="80" alt="">
+                    </a>
+                    <form id="login" class="form-inline">
+                        <!-- The Form form to create the Email and Password -->
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="user" style="color: #939292;"> Email </label>
+                                <input type="text" class="form-control" id="user" placeholder="Enter Email Address">
+                            </div>
+                            <div class="col">
+                                <label for="password" style="color: #939292;">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                            </div>
+                            <div class="col mt-4">
+                                <button type="submit" id="loginBtn" class="btn btn-primary my-2 my-sm-0"
+                                    style="color: white;">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+
+        </header>
+        <!--End of the Header-->
+        <main class="flex-fill">
+            <!--The Body Wrapper-->
+            <div class="row w-100">
+                <div class="col-md-8">
+                    <!--The Picture Column -->
+                    <img class="indexpic" src="images/signup.jpg" height="614px" width="1013px" alt="">
+                    
+                </div>
+                <!--End of the Picture Column-->
+                <div class="col-md-4">
+                    <!--The Sign Up Column-->
+                    <div class="card mb-3 h-100" style="background-color: #f7f5f5;">
+                        <div class="card-header">
+                            <h3>Sign Up</h3>
+                        </div>
+                        <div class="card-body text-center text-primary">
+                            <div class="signupbox">
+                                <form id="signup-form" method="" action="">
+                                    <div class="container">
+                                        <div class="form-row">
+                                            <div class="col-4 text-right">
+                                                <label for="fname">First Name</label>
+                                            </div>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="fname"
+                                                    placeholder="Enter First Name">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row">
+                                            <div class="col-4 text-right">
+                                                <label for="lname">Last Name</label>
+                                            </div>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="lname"
+                                                    placeholder="Enter Last Name">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row">
+                                            <div class="col-4 text-right">
+                                                <label for="email">Email</label>
+                                            </div>
+                                            <div class="col-8">
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="Enter Email Address">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-row">
+                                            <div class="col-4 text-right">
+                                                <label for="signup-password">Password</label>
+                                            </div>
+                                            <div class="col-8">
+                                                <input type="password" class="form-control" id="signup-password"
+                                                    placeholder="Enter Password">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+
+                                        <input class="btn btn-primary" type="submit" value="Submit Now">
+                                    </div>
+                                </form>
+                                <br>
+
+
+                                <input id="twitterBtn" class="btn btn-primary" type="button" value="Login with Twitter">
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of the Sign Up Column-->
+            </div>
+
+        </main>
+        <!--End of the Body Wrapper-->
+        <section once="footers" class="index-footer bg-light" style="background-color: #f7f5f5;">
+            <!--The Footer Column -->
+            <div class="container">
+                <div class="media-container-row align-center mbr-white">
+                    <div class="row row-links text-center">
+                        <p style="color: #939292;">© 2020, SARS</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of the Footer Column-->
+    </div>
+    <!--End of the Page Wrapper-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+    <script src="js/connection.js" type="text/javascript"></script>
+    
+
+
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap-notify.js"></script>
+
+
+    <script>
+
+        //*****************************Sign Up Form**************************************************************************************************************************
+        const signupForm = document.querySelector('#signup-form');
+
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            //get user info
+            const fname = signupForm['fname'].value;
+            const lname = signupForm['lname'].value;
+            const email = signupForm['email'].value;
+            const password = signupForm['signup-password'].value;
+
+            auth.createUserWithEmailAndPassword(email, password).then(cred => {
+
+
+                cred.user.updateProfile({
+                    displayName: fname + " " + lname,
+                }).then(function () {
+                    var displayN = cred.user.displayName;
+                    var email = cred.user.email;
+                    sessionStorage.setItem("displayName", displayN);
+                    sessionStorage.setItem("email", email);
+                    console.log(cred);
+                    // Update successful.
+                    window.location.assign('home.html');
+                    console.log('signed in');
+                    $.notify(
+                        {
+                            // options
+                            title: "Success",
+                            message: 'Successfully Sign in to SARS App'
+                        },
+                        {
+                            // settings
+                            type: 'success',
+                            allow_dismiss: true,
+                            newest_on_top: false,
+                            offset: 20,
+                            spacing: 10,
+                            z_index: 1031,
+                            delay: 5000,
+                            timer: 1000,
+                            animate: {
+                                enter: 'animated fadeInDown',
+                                exit: 'animated fadeOutUp'
+                            },
+                        }
+                    );
+
+                }).catch(function (error) {
+                    // An error happened.
+                    console.log(error);
+
+                });
+            })
+
+
+        })
+        //*************************************************************************************************************************************************************
+
+        //*****************************Sign In to the App**************************************************************************************************************
+        const loginForm = document.querySelector('#login');
+
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            //get user info
+            const email = loginForm['user'].value;
+            const password = loginForm['password'].value;
+
+            auth.signInWithEmailAndPassword(email, password).then(cred => {
+                var displayN = cred.user.displayName;
+                var email = cred.user.email;
+                sessionStorage.setItem("displayName", displayN);
+                sessionStorage.setItem("email", email);
+                console.log(cred.user.displayName);
+                window.location.assign('home.html');
+                console.log('signed in');
+                $.notify(
+                    {
+                        // options
+                        title: "Success",
+                        message: 'Successfully Log in to SARS App'
+                    },
+                    {
+                        // settings
+                        type: 'success',
+                        allow_dismiss: true,
+                        newest_on_top: false,
+                        offset: 20,
+                        spacing: 10,
+                        z_index: 1031,
+                        delay: 5000,
+                        timer: 1000,
+                        animate: {
+                            enter: 'animated fadeInDown',
+                            exit: 'animated fadeOutUp'
+                        },
+                    }
+                );
+
+
+            }).catch(function (error) {
+                // An error happened.
+                console.log(error);
+                $.notify(
+                    {
+                        // options
+                        title: "Error",
+                        message: "Error  " + error.message,
+                    },
+                    {
+                        // settings
+                        type: 'danger',
+                        allow_dismiss: true,
+                        newest_on_top: false,
+                        offset: 20,
+                        spacing: 10,
+                        z_index: 1031,
+                        delay: 5000,
+                        timer: 1000,
+                        animate: {
+                            enter: 'animated fadeInDown',
+                            exit: 'animated fadeOutUp'
+                        },
+                    }
+                );
+            });
+
+        })
+        //************************************************************************************************************************************************************
+
+
+        //********************************Sign In With Twitter********************************************************************************************************
+
+        const tButton = document.querySelector('#twitterBtn');
+        var provider = new firebase.auth.TwitterAuthProvider();
+        provider.setCustomParameters({
+            'lang': 'es'
+        });
+        tButton.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            auth.signInWithPopup(provider).then(function (result) {
+                // This gives you a the Twitter OAuth 1.0 Access Token and Secret.
+                // You can use these server side with your app's credentials to access the Twitter API.
+                var token = result.credential.accessToken;
+                var secret = result.credential.secret;
+                // The signed-in user info.
+                var username = result.additionalUserInfo.username;
+                var displayN = result.user.displayName;
+                var email = result.user.email;
+                var photoURL = result.user.photoURL;
+                sessionStorage.setItem("token", token);
+                sessionStorage.setItem("secret", secret);
+                sessionStorage.setItem("username", username);
+                sessionStorage.setItem("displayName", displayN);
+                sessionStorage.setItem("email", email);
+                sessionStorage.setItem("photoUrl", photoURL);
+                console.log(result);
+                window.location.assign('home.html');
+                $.notify(
+                        {
+                            // options
+                            title: "Success",
+                            message: 'Successfully Sign in to SARS App'
+                        },
+                        {
+                            // settings
+                            type: 'success',
+                            allow_dismiss: true,
+                            newest_on_top: false,
+                            offset: 20,
+                            spacing: 10,
+                            z_index: 1031,
+                            delay: 5000,
+                            timer: 1000,
+                            animate: {
+                                enter: 'animated fadeInDown',
+                                exit: 'animated fadeOutUp'
+                            },
+                        }
+                    );
+
+                // ...
+            }).catch(function (error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                // The email of the user's account used.
+                var email = error.email;
+                // The firebase.auth.AuthCredential type that was used.
+                var credential = error.credential;
+
+                // ...
+            });
+
+        })
+
+
+                //**************************************************************************************************************************************************************
+
+    </script>
+
+</body>
+
+</html>

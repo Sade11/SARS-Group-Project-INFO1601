@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/08119fe801.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="d-flex flex-column min-vh-100">
+        <!--The Page Wrapper-->
+        <header>
+            <!--The Header of the Page -->
+            <nav class="navbar navbar-light" style="background-color: #f7f5f5;">
+                <div class="container">
+                    <a class="navbar-brand" style="color: #5198d1;" href="home.html">
+                        <!--When you click the logo it Will return you to the home page -->
+                        <img src="images/logo 2.png" width="80" height="80" alt="">
+                    </a>
+                    <form class="form-inline">
+                        <!--Display the Name and Log In in the Header-->
+                        <div>
+                            <input type="text" class="form-control" id="headername" readonly><span
+                                style="padding-left: 20px;">Is Logged In</span>
+
+                        </div>
+                    </form> <!-- End of Display the Name and Log In in the Header-->
+                </div>
+            </nav>
+        </header>
+        <!--End of the Header-->
+
+        <main class="flex-fill">
+            <!--The Body Wrapper-->
+            <br>
+            <div class="row w-100">
+                <div class="col-md-3">
+                    <ul class="nav flex-column">
+                        <!--The Navigation Bar -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="home.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="profile.html"><i class="fas fa-user-circle"></i>
+                                Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact.html"><i class="fas fa-address-book"></i> Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="privacy.html"><i class="fas fa-user-lock"></i> Privacy and
+                                Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="terms.html"><i class="fas fa-file-contract"></i> Terms and
+                                Agreement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="logout" class="nav-link" href><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                <!--End of Div for the Navigation Bar -->
+
+                <div class="col-md-6">
+                    <!--The Contact Column-->
+
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Us</h2>
+
+                    <br>
+                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions or concerns? Please do
+                        not hesitate to contact us directly. Our team here at SARS will get back to you
+                        as quickly as possible. You can email us your issue at <strong>SARShelpCenter@gmail.com</strong>
+                    </p>
+
+                    <div>
+                        <img class="contactpic" src="images/envelope2.jpg" alt="">
+                    </div>
+
+
+                </div>
+                <!--End of the Contact Column-->
+
+                <div class="col-md-3">
+                    <!--The Location Column-->
+                    <div>
+                        <h4 class="text-center">Location</h4>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.0706890133793!2d-61.511823585252124!3d10.651616492406282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c3607fc3fda6c31%3A0x873950fa62e9fc3d!2sQueen%20St%2C%20Port%20of%20Spain%2C%20Trinidad%20and%20Tobago!5e0!3m2!1sen!2svc!4v1589208600075!5m2!1sen!2svc"
+                            width="350px" height="450px" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                </div>
+                <!--End of the Location Coulmn-->
+
+
+
+
+
+
+
+
+            </div>
+    </div>
+
+    </main>
+    <!--End of Body Wrapper-->
+    <section once="footers" class="index-footer bg-light" style="background-color: #f7f5f5;">
+        <!--The Footer-->
+        <div class="container">
+            <div class="media-container-row align-center mbr-white">
+                <div class="row row-links text-center">
+                    <p style="color: #939292;">© 2020, SARS</p>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of the Fotter-->
+
+
+    </div>
+    <!--End of the Page Wrapper-->
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+                    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+    <script src="js/connection.js" type="text/javascript"></script>
+    
+
+
+
+
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+        //*****************************logout*************************************************************************************************
+        const logout = document.querySelector('#logout');
+        logout.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log("clicked");
+            firebase.auth().signOut().then(function () {
+                // Sign-out successful.
+                sessionStorage.clear();
+                window.location.assign('index.html');
+                console.log('logged out');
+            }).catch(function (error) {
+                // An error happened.
+                console.log(error);
+            });
+
+        })
+        //********************************************************************************************************************************
+
+        //******************************************** Load Display Name for the Header***************************************************
+        document.addEventListener("DOMContentLoaded", function () {
+            var displayName = sessionStorage.getItem('displayName');
+            console.log();
+            document.getElementById('headername').value = displayName;
+
+
+        });
+                //*********************************************************************************************************************************
+    </script>
+
+</body>
+
+</html>
